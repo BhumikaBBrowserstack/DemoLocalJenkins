@@ -8,7 +8,7 @@
     "build": "browserstack-Appium-Local01",
     "name": "local_test",
     "browserstack.debug": true,
-    "browserstack.local": true,
+    "browserstack.local": false,
     "app": "bs://fbecb9789666066f44e544ffd9e48f546331f78e"
   },
 
