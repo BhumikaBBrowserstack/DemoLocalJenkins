@@ -44,6 +44,9 @@ public class BrowserStackTestNGTest {
             }
         }
 
+        String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
+        capabilities.setCapability("build", buildName);
+
         String username = System.getenv("BROWSERSTACK_USERNAME");
         if(username == null) {
             username = (String) config.get("username");
